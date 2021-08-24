@@ -6,6 +6,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  "permissions": [
+     "storage",
+     "activeTab",
+     "scripting",
+     "tabs"
+   ],
   "host_permissions": [
         "https://www.espncricinfo.com/*"
    ]
