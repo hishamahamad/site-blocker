@@ -1,6 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.hostname === "www.espncricinfo.com" && window.location.pathname === "/") {
-       document.getElementsByClassName("home-page-wrapper")[0].replaceChildren({});
-       console.log("ESPNCricinfo feed is now hidden!");
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
+        chrome.scripting.executeScript({
+            target: { tabId: tabId },
+            files: ["./foreground.js"]
+        })
+            .then(() => {
+                console.log("INJECTED THE FOREGROUND SCRIPT.");
+            })
+            .catch(err => console.log(err));
     }
-}
+});
