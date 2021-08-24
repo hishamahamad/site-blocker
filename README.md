@@ -1,2 +1,2 @@
-# cricinfo-blocker
-Chrome extension to block espncricinfo.com home feed
+# ESPNCricinfo Feed Hider
+Chrome extension to hide ESPNCricinfo (espncricinfo.com) homepage feed
