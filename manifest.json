@@ -2,5 +2,8 @@
   "name": "ESPNCricinfo feed hider",
   "description": "Chrome extension to hide ESPNCricinfo homepage feed",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  }
 }
