@@ -7,6 +7,7 @@
 
         const targetElement = document.body;
         targetElement.replaceChildren(blankSection);
+        document.title = "<redacted>";
         console.log("ESPNCricinfo is blanked out!");
     }
 // }, false);
