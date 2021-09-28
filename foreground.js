@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         blankSection.setAttribute("style", "margin: 10rem; font-size: 3rem; text-align: center;");
         blankSection.appendChild(text);
 
-        const targetElement = document.getElementsByClassName("home-page-wrapper")[0];
+        const targetElement = document.getElementsByTagName("body")[0];
         targetElement.replaceChildren(blankSection);
         console.log("ESPNCricinfo feed is now hidden!");
     }
