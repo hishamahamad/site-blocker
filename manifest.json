@@ -1,7 +1,7 @@
 {
-  "name": "ESPNCricinfo feed hider",
-  "description": "Chrome extension to hide ESPNCricinfo homepage feed",
-  "version": "1.0",
+  "name": "Personalised Site Blocker",
+  "description": "Chrome extension to hide any site I want",
+  "version": "2.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
@@ -14,6 +14,7 @@
    ],
   "host_permissions": [
         "https://www.espncricinfo.com/*",
+        "https://www.youtube.com/*",
         "https://www.cwseed.com/*"
    ]
 }
