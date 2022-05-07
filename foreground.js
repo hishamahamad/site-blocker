@@ -10,4 +10,6 @@ if (window.location.hostname === "www.espncricinfo.com") {
     targetElement.replaceChildren(blankSection);
     document.title = "<redacted>";
     console.log("ESPNCricinfo is blanked out!");
+    
+    history.back();
 }
