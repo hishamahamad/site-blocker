@@ -3,6 +3,10 @@ const blockedSites = [
     "www.youtube.com"
 ];
 
-if (blockedSites.includes(window.location.hostname)) {    
-    history.back();
+const runTheBlocker = () => {
+    if (blockedSites.includes(window.location.hostname)) {    
+        history.back();
+    }
 }
+
+setInterval(runTheBlocker, 1000);
