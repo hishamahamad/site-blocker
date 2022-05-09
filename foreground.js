@@ -1,4 +1,4 @@
-const runTheBlocker = () => {
+var runTheBlocker = () => {
     let blockedSites = [
         "www.espncricinfo.com",
         "www.youtube.com"
